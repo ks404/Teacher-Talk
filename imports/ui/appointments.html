@@ -1,0 +1,13 @@
+<template name="appointments">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <h4 class="page-header">Appointments</h4>
+      {{> date_form}}
+      <ul class="list-group appointments-list">
+        {{#each appointments}}
+          <li class="list-group-item">{{dateTime timestamp}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</template>
