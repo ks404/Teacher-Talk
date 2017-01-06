@@ -8,5 +8,6 @@ import '/imports/ui/teacher_form.js';
 
 import '/imports/ui/date_form.js';
 
+import '/imports/ui/appointments.js';
 
 

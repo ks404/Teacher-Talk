@@ -3,9 +3,9 @@ Meteor.methods({
     check( appointment, String );
 
     try {
-      return Appointments.insert( { timestamp: appointment } );
+      return "method exception1" + Appointments.insert( { timestamp: appointment } );
     } catch( exception ) {
-      return exception;
+      return "method exception2" + exception;
     }
   }
 });
