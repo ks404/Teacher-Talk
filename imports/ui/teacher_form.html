@@ -1,0 +1,108 @@
+
+
+<template name="teacher_form">
+
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<!-- Bootstrap Toggle for buttons http://www.bootstraptoggle.com/ -->
+<!-- toggle needs to be here because if in main.html it overrides and doesn't work -->
+
+
+<script src="/imports/datetimepicker.js"></script>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="btn btn-default navbar-btn">Profile</button>
+      <button type="button" class="btn btn-default navbar-btn">Matches</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+<form>
+  <div class="form-group">
+    <label for="inputName">Name</label>
+    <input type="name" class="form-control" id="idName" placeholder="Whats your name?">
+  </div>
+
+  <div class="form-group">
+    <label for="inputLanguage">Language</label>
+      <select class="form-control" id="idLanguage">
+        <option>English</option>
+        <option>Spanish</option>
+        <option>Russian</option>
+        <option>Turkish</option>
+      </select>
+  </div>
+
+  <div class="form-group">
+  <label for="inputContact">Contact Me:</label>
+  <br>
+    <label class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="idPhone">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Phone</span>
+    </label>
+  <br>
+    <label class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="idEmail">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Email</span>
+    </label>
+  <br>
+    <label class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="idSkype">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Skype</span>
+    </label>
+
+  </div>
+
+    <div class="form-group btn-group">
+
+      <label for="inputContact">Contact Me:</label>
+  <br>
+    <label class="custom-control custom-checkbox">
+      <input type="checkbox" id="idPhone" checked data-toggle="toggle" data-on="Phone" data-off="Phone" data-onstyle="success" data-offstyle="danger">
+    </label>
+  <br>
+
+  <br>
+    <label class="custom-control custom-checkbox ">
+      <input type="checkbox" id="idSkype" checked data-toggle="toggle" data-on="Skype  " data-off="Skype  " data-onstyle="success" data-offstyle="danger">
+    </label>
+  <br>
+
+
+  <br>
+   <label class="custom-control custom-checkbox" >
+      <input  type="checkbox" id="idTwitter" checked data-toggle="toggle" data-on="Email  " data-off="Email  " data-onstyle="success" data-offstyle="danger">
+    </label>
+  <br>
+
+  <br>
+   <label class="custom-control custom-checkbox ">
+      <input type="checkbox" id="idTwitter" checked data-toggle="toggle" data-on="Twitter" data-off="Twitter" data-onstyle="success" data-offstyle="danger">
+    </label>
+  <br>
+
+  <br>
+   <label class="custom-control custom-checkbox ">
+      <input type="checkbox" id="idTwitter" checked data-toggle="toggle" data-on="Live   " data-off="Live" data-onstyle="success" data-offstyle="danger">
+    </label>
+  <br>
+
+  </div>
+
+
+
+
+
+</form>
+</div>
+
+
+
+
+</template>
