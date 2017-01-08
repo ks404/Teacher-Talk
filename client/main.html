@@ -11,6 +11,10 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
+<!-- Stylesheet for cards -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+
+
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -27,9 +31,16 @@
 
 <body>
 
-{{> teacher_form}}
-
-{{> appointments}}
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  
+ 
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="/homeview">My Matches</a>
+      <a class="nav-item nav-link" href="/addinfo">Change Info</a>
+      <a class="nav-item nav-link" href="/profile">View Profile</a>
+ 
+  </div>
+</nav>
 
 </body>
 

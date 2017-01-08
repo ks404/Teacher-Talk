@@ -1,15 +1,15 @@
 <template name="appointments">
-  <div class="row">
+
     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
       <h4 class="page-header">Appointments</h4>
       {{> date_form}}
       <ul class="list-group appointments-list">
         {{#each appointments}}
           <li class="list-group-item">{{dateTime timestamp}} {{tillTime timeend}}
-            <button type="button" id="del_button" class="btn btn-default btn-xs pull-right">Delete</button>
+          <button type="button" id="del_button" class="btn btn-danger btn-sm pull-right">Delete</button>
           </li>
         {{/each}}
       </ul>
     </div>
-  </div>
+
 </template>

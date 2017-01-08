@@ -2,12 +2,16 @@
 
 <template name = "date_form">
 
+<div class="checkbox">
+  <label><input type="checkbox" value="">  By appointment</label>
+</div>
 
 <form id="add-appointment">
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         <div class="form-group">
-          <input type="text" class="form-control datetimepicker" data-DateTimePicker name="appointment" placeholder="Pick a Date">
+        <label for="inputLanguage">Date & Time</label>
+          <input type="text" class="form-control datetimepicker" data-DateTimePicker name="appointment" placeholder="Click to select">
         </div>
       </div>
     </div>
@@ -26,10 +30,24 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">    
+        <div class="form-group">
+            <label for="inputLanguage">Time Zone</label>
+            <select class="form-control timepicker" id="idDuration">
+              <option>West</option>
+              <option>Mountain</option>
+              <option>Central</option>
+              <option>Siberia</option>
+            </select>
+        </div>
+      </div>
+    </div>
+
     <div class="row">     
       <div class="col-xs-4">
         <div class="form-group">
-          <button class="btn btn-success btn-block">Add Appointment</button>
+          <button class="btn btn-success center-block">Add Appointment</button>
         </div>
       </div>
     </div>

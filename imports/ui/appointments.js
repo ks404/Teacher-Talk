@@ -30,6 +30,7 @@ Template.appointments.events({
       let appId = this._id;
 
       Meteor.call( 'delAppointment', appId );
+      Bert.alert( 'Appointment deleted!', 'danger' );
 
 
     },
