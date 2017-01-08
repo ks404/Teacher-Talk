@@ -1,11 +1,11 @@
 Meteor.methods({
-  addAppointment( appointment ) {
-    check( appointment, String );
+  addAppointment( appointment, endtime ) {
+    //check( appointment, String endtime, String );
 
     try {
-      return "method exception1" + Appointments.insert( { timestamp: appointment } );
+      return Appointments.insert( { timestamp: appointment, timeend: endtime } );
     } catch( exception ) {
-      return "method exception2" + exception;
+      return exception;
     }
   }
 });

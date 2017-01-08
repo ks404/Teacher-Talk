@@ -20,10 +20,22 @@ Template.date_form.events({
     let picker   = $( '.datetimepicker' ),
         dateTime = picker.data( 'DateTimePicker' ).date();
 
+    let timepicker = $( '.timepicker'),
+        durationString = timepicker.val(),
+        duration = durationString.replace(/[^0-9]/g, '');
+
+      console.log(duration);
+
+
     if ( dateTime ) {
       let appointment = dateTime.format();
 
-      Meteor.call( 'addAppointment', appointment, ( error, response ) => {
+
+      console.log(duration);      
+
+      let endtime = moment(appointment).add(duration, 'minutes').format();
+
+      Meteor.call( 'addAppointment', appointment, endtime, ( error, response ) => {
         if ( error ) {
           Bert.alert( error.reason, 'danger' );
         } else {

@@ -6,4 +6,17 @@ Template.registerHelper( 'dateTime', ( timestamp ) => {
 
     return `${ date } at ${ time }`;
   }
+
+});
+
+
+Template.registerHelper( 'tillTime', (timeend ) => {
+  if ( timeend ) {
+    let momentToFormat = moment( timeend ),
+        date           = momentToFormat.format( 'MMMM Do, YYYY' ),
+        time           = momentToFormat.format( 'hh:mm a' );
+
+    return ` till ${ time }`;
+  }
+
 });

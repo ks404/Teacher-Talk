@@ -3,13 +3,30 @@
 <template name = "date_form">
 
 
-  <form id="add-appointment">
+<form id="add-appointment">
     <div class="row">
-      <div class="col-xs-8">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         <div class="form-group">
           <input type="text" class="form-control datetimepicker" data-DateTimePicker name="appointment" placeholder="Pick a Date">
         </div>
       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">    
+        <div class="form-group">
+            <label for="inputLanguage">Duration</label>
+            <select class="form-control timepicker" id="idDuration">
+              <option>15 min</option>
+              <option>30 min</option>
+              <option>45 min</option>
+              <option>60 min</option>
+            </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">     
       <div class="col-xs-4">
         <div class="form-group">
           <button class="btn btn-success btn-block">Add Appointment</button>

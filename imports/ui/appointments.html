@@ -5,7 +5,7 @@
       {{> date_form}}
       <ul class="list-group appointments-list">
         {{#each appointments}}
-          <li class="list-group-item">{{dateTime timestamp}}</li>
+          <li class="list-group-item">{{dateTime timestamp}} {{tillTime timeend}}</li>
         {{/each}}
       </ul>
     </div>

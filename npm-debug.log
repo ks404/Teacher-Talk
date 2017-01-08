@@ -3,14 +3,14 @@
 1 verbose cli   '/Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm',
 1 verbose cli   'install',
 1 verbose cli   '--save',
-1 verbose cli   'themeteorchef:bert' ]
+1 verbose cli   'momentjs:moment' ]
 2 info using npm@3.10.9
 3 info using node@v4.6.2
 4 silly loadCurrentTree Starting
 5 silly install loadCurrentTree
 6 silly install readLocalPackageData
-7 silly fetchPackageMetaData themeteorchef:bert
-8 silly fetchPackageMetaData Error: Unsupported URL Type: themeteorchef:bert
+7 silly fetchPackageMetaData momentjs:moment
+8 silly fetchPackageMetaData Error: Unsupported URL Type: momentjs:moment
 8 silly fetchPackageMetaData     at parseUrl (/Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:186:13)
 8 silly fetchPackageMetaData     at npa (/Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:79:12)
 8 silly fetchPackageMetaData     at module.exports (/Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/realize-package-specifier/index.js:12:15)
@@ -21,12 +21,12 @@
 8 silly fetchPackageMetaData     at Array.forEach (native)
 8 silly fetchPackageMetaData     at /Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
 8 silly fetchPackageMetaData     at Array.forEach (native)
-8 silly fetchPackageMetaData  error for themeteorchef:bert [Error: Unsupported URL Type: themeteorchef:bert]
+8 silly fetchPackageMetaData  error for momentjs:moment [Error: Unsupported URL Type: momentjs:moment]
 9 silly rollbackFailedOptional Starting
 10 silly rollbackFailedOptional Finishing
 11 silly runTopLevelLifecycles Finishing
 12 silly install printInstalled
-13 verbose stack Error: Unsupported URL Type: themeteorchef:bert
+13 verbose stack Error: Unsupported URL Type: momentjs:moment
 13 verbose stack     at parseUrl (/Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:186:13)
 13 verbose stack     at npa (/Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:79:12)
 13 verbose stack     at module.exports (/Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/realize-package-specifier/index.js:12:15)
@@ -39,10 +39,10 @@
 13 verbose stack     at Array.forEach (native)
 14 verbose cwd /Users/mac/Desktop/meteor/teachtalk/teachtalk
 15 error Darwin 16.3.0
-16 error argv "/Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node" "/Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm" "install" "--save" "themeteorchef:bert"
+16 error argv "/Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node" "/Users/mac/.meteor/packages/meteor-tool/.1.4.2_3.pncjxf++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm" "install" "--save" "momentjs:moment"
 17 error node v4.6.2
 18 error npm  v3.10.9
-19 error Unsupported URL Type: themeteorchef:bert
+19 error Unsupported URL Type: momentjs:moment
 20 error If you need help, you may report this error at:
 20 error     <https://github.com/npm/npm/issues>
 21 verbose exit [ 1, true ]
