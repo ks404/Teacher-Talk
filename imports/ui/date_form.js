@@ -14,6 +14,10 @@ Template.date_form.onRendered( () => {
 
 
 Template.date_form.events({
+
+
+
+
   'submit form' ( event, template ) {
     event.preventDefault();
 

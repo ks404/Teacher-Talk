@@ -5,7 +5,9 @@
       {{> date_form}}
       <ul class="list-group appointments-list">
         {{#each appointments}}
-          <li class="list-group-item">{{dateTime timestamp}} {{tillTime timeend}}</li>
+          <li class="list-group-item">{{dateTime timestamp}} {{tillTime timeend}}
+            <button type="button" id="del_button" class="btn btn-default btn-xs pull-right">Delete</button>
+          </li>
         {{/each}}
       </ul>
     </div>

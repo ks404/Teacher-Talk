@@ -16,3 +16,22 @@ Template.appointments.helpers({
     }
   }
 });
+
+
+Template.appointments.events({
+
+
+'click #del_button': function()
+
+    {
+  
+      console.log('click del');
+
+      let appId = this._id;
+
+      Meteor.call( 'delAppointment', appId );
+
+
+    },
+
+})
