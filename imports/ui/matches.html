@@ -1,0 +1,88 @@
+<template name="matches">
+
+
+<div class="row">
+  <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <h4 class="page-header">My Matches</h4>
+
+
+<div class="card">
+  <div class="card-block">
+    <h3 class="card-title">Plato</h3>
+    <b>Athens, Greece</b>
+    <p class="card-text">Before the Akademia was a school, and even before Cimon enclosed its precincts with a wall, it contained a sacred grove of olive trees dedicated to Athena, the goddess of wisdom, outside the city walls of ancient Athens.</p>
+    
+    <a href="#" class="btn btn-danger pull-right"  >Forget</a>
+
+    <a href="/profile" class="btn btn-primary pull-right" style="margin-right: 20px" >View Profile</a>
+
+    <br>
+    <br>
+        {{#each appointments}}
+          <li class="list-group-item">{{dateTime timestamp}} {{tillTime timeend}}
+          </li>
+        {{/each}}
+  
+    
+
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-block">
+    <h3 class="card-title">Isaac Newton</h3>
+    <b>Woolshire, England</b>
+    <p class="card-text">From the age of about twelve until he was seventeen, Newton was educated at The King's School, Grantham which taught Latin and Greek and probably a significant foundation of mathematics.</p>
+    
+    <a href="#" class="btn btn-danger pull-right"  >Forget</a>
+
+    <a href="/profile" class="btn btn-primary pull-right" style="margin-right: 20px" >View Profile</a>
+
+    <br>
+    <br>
+        {{#each appointments}}
+          <li class="list-group-item">{{dateTime timestamp}} {{tillTime timeend}}
+          </li>
+        {{/each}}
+  
+    
+
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-block">
+    <h3 class="card-title">René Descarte</h3>
+    <b>Le Haye En Touraine, France</b>
+    <p class="card-text">The Prytanée National Militaire, originally Collège Royal Henry-Le-Grand or Collège Henri-IV de La Flèche, is a French school managed by the military, offering regular secondary education as well as special preparatory classes.</p>
+    
+    <a href="#" class="btn btn-danger pull-right"  >Forget</a>
+
+    <a href="/profile" class="btn btn-primary pull-right" style="margin-right: 20px" >View Profile</a>
+
+    <br>
+    <br>
+        {{#each appointments}}
+          <li class="list-group-item">{{dateTime timestamp}} {{tillTime timeend}}
+          </li>
+        {{/each}}
+  
+    
+
+  </div>
+</div>
+
+
+
+
+
+  </div>
+
+
+
+</div>
+ 
+
+
+</template>

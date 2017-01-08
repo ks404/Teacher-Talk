@@ -1,0 +1,75 @@
+
+<template name="profile">
+
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<!-- Bootstrap Toggle for buttons http://www.bootstraptoggle.com/ -->
+<!-- toggle needs to be here because if in main.html it overrides and doesn't work -->
+
+
+<script src="/imports/datetimepicker.js"></script>
+
+
+
+
+
+
+<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+
+<h4 class="page-header">My Profile</h4>
+
+
+  <div class="form-group">
+    <label for="inputName">Name</label>
+    <p>Confucius</p>
+  </div>
+
+  <div class="form-group">
+    <label for="inputLanguage">Language</label>
+    <p>Shandong Mandarin</p>
+  </div>
+
+
+
+<div class="form-group ">
+  <label for="inputContact">Subject Areas:</label>
+  <br>
+    <ul class="list-group col-xs-6 col-sm-6 col-lg-6">
+      <li class="list-group-item">Philosophy</li>
+      <li class="list-group-item">Cooking</li>
+      <li class="list-group-item">Poetry</li>
+    <li class="list-group-item">Gardening</li>
+  </ul>
+</div>
+
+<div class = "row"></div>
+<br>
+<div class = "row"></div>
+
+ <div class="form-group ">
+  <label for="inputContact">Contact Options:</label>
+  <br>
+    <ul class="list-group">
+      <li class="list-group-item">Courier</li>
+      <li class="list-group-item">Letter</li>
+      <li class="list-group-item">Pigeon</li>
+    </ul>
+</div>
+
+<div class = "row"></div>
+<br>
+<div class = "row"></div>
+
+
+<div class="form-group">
+  <label for="description-input">My classroom:</label>
+
+    <p>Confucius was educated at schools for commoners, where he studied and learned the Six Arts. Confucius was born into the class of shi (士), between the aristocracy and the common people. He is said to have worked in various government jobs during his early 20s,
+</p>
+</div>
+
+</div>
+
+{{> appointments}}
+
+
+</template>
